@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "../styles/index.css";
+import "../styles/index.scss";
 import callReposApi from "../services/reposApi";
+import RepoList from "./RepoList";
 
 function App() {
 	//API
@@ -14,17 +15,10 @@ function App() {
 
 	return (
 		<main>
-			<article>
+			<section>
 				<img src="./images/Isa.jpeg" alt="ProfilePicture"></img>
-			</article>
-			<div>
-				<ul className="repoList">
-					<li classname="repoItem">
-						<p> REPO 1 NAME </p>
-						<p> REPO 1 DESCRIPTION</p>
-					</li>
-				</ul>
-			</div>
+			</section>
+			<RepoList repos={repos} />
 		</main>
 	);
 }
