@@ -9,6 +9,7 @@ const callReposApi = (user) => {
 					repoName: repo.name,
 					repoDescr: repo.description,
 					repoLink: repo.html_url,
+					userImage: repo.owner.avatar_url,
 				};
 			});
 		});
