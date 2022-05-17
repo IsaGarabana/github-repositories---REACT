@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./styles/index.scss";
+import "./styles/core/reset.scss";
 import callReposApi from "./services/reposApi";
 import RepoList from "./components/RepoList";
 import FilterByName from "./components/FilterByName";
