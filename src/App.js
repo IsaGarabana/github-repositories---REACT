@@ -36,14 +36,16 @@ function App() {
 	}, []);
 
 	return (
-		<main>
-			<section>
-				<UserData user={user} />
-			</section>
-
-			<FilterByName handleFilterName={handleFilterName} />
-			<RepoList repos={filteredRepos} />
-		</main>
+		<>
+			<header> </header>
+			<main className="main">
+				<section>
+					<UserData user={user} />
+				</section>
+				<FilterByName handleFilterName={handleFilterName} />
+				<RepoList repos={filteredRepos} />
+			</main>
+		</>
 	);
 }
 

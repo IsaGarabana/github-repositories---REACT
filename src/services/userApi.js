@@ -4,12 +4,16 @@ const callUserApi = (user) => {
 		.then((response) => response.json())
 		.then((data) => {
 			return {
-				userImage: data.avatar_url,
-				userCompany: data.company,
-				userLocation: data.location,
-				userBlog: data.blog,
-				userTwitter: data.twitter_username,
-				userOrganizations: data.organizations_url,
+				image: data.avatar_url,
+				login: data.login,
+				name: data.name,
+				bio: data.bio,
+				followers: data.followers,
+				following: data.following,
+				company: data.company,
+				location: data.location,
+				blog: data.blog,
+				twitter: data.twitter_username,
 			};
 		});
 };
