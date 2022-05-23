@@ -3,8 +3,11 @@ import "./styles/index.scss";
 import callReposApi from "./services/reposApi";
 import RepoList from "./components/RepoList";
 import FilterByName from "./components/FilterByName";
+import callUserApi from "./services/userApi";
+import UserData from "./components/UserData";
 
 function App() {
+	////Repos API and filter
 	const [repos, setRepos] = useState([]);
 	const [filterName, setFilterName] = useState("");
 
@@ -22,11 +25,22 @@ function App() {
 		return repo.repoName.toLowerCase().includes(filterName.toLowerCase());
 	});
 
+	////User API
+
+	const [user, setUser] = useState([]);
+
+	useEffect(() => {
+		callUserApi().then((userData) => {
+			setUser(userData);
+		});
+	}, []);
+
 	return (
 		<main>
 			<section>
-				<img src="" alt="ProfilePicture"></img>
+				<UserData user={user} />
 			</section>
+
 			<FilterByName handleFilterName={handleFilterName} />
 			<RepoList repos={filteredRepos} />
 		</main>
