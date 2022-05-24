@@ -27,7 +27,7 @@ function App() {
 			<section>
 				<img src="" alt="ProfilePicture"></img>
 			</section>
-			<FilterByName handleFilterName={handleFilterName} />
+			<FilterByName handleFilterName={handleFilterName} filterName={filterName} />
 			<RepoList repos={filteredRepos} />
 		</main>
 	);
