@@ -12,6 +12,7 @@ const FilterByName = (props) => {
 					name="name"
 					id="name"
 					onChange={handleInput}
+					value={props.filterName}
 				></input>
 			</form>
 		</section>
