@@ -2,7 +2,7 @@ function UserData(props) {
 	const UserInfo = props.user;
 
 	return (
-		<article>
+		<article className="article">
 			<img src={UserInfo.image} />
 			<p> {UserInfo.name}</p>
 			<p>{UserInfo.login}</p>
