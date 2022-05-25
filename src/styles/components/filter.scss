@@ -1,0 +1,42 @@
+.search {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	&--form {
+		&__input {
+			width: 100%;
+			padding: 5px 12px;
+			font-size: 14px;
+			line-height: 20px;
+			vertical-align: middle;
+			border: 1px solid #d0d7de;
+			border-radius: 6px;
+		}
+	}
+}
+
+.button {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	gap: 20px;
+	height: 35px;
+
+	&--type {
+		padding: 0 5px 0 5px;
+	}
+
+	&--language {
+		padding: 0 5px 0 5px;
+	}
+
+	&--sort {
+		padding: 0 5px 0 5px;
+	}
+
+	&--new {
+		padding: 0 5px 0 5px;
+		background-color: rgb(73, 151, 73);
+	}
+}
