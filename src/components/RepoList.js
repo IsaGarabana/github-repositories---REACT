@@ -11,7 +11,7 @@ function RepoList(props) {
 
 	return (
 		<section>
-			<ul className="repoList">{repoElements}</ul>
+			<ul>{repoElements}</ul>
 		</section>
 	);
 }

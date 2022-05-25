@@ -1,0 +1,52 @@
+%mainmargin {
+	margin-bottom: 10px;
+}
+%secondarymargin {
+	margin-bottom: 6px;
+}
+
+.userdetail {
+	&--image {
+		height: 300px;
+		width: 300px;
+		border-radius: 50%;
+		margin: 0 0 20px 0;
+	}
+
+	&--name {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+	&--login {
+		@extend %mainmargin;
+		color: #57606a;
+		font-size: 1.4rem;
+	}
+	&--bio {
+		@extend %mainmargin;
+	}
+	&--follow {
+		@extend %mainmargin;
+	}
+	&--company {
+		@extend %secondarymargin;
+	}
+	&--location {
+		@extend %secondarymargin;
+	}
+	&--blog {
+		@extend %secondarymargin;
+		:hover {
+			color: blue;
+			text-decoration: underline;
+		}
+	}
+
+	&--twitter {
+		@extend %secondarymargin;
+		:hover {
+			color: blue;
+			text-decoration: underline;
+		}
+	}
+}
