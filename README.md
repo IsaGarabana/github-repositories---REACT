@@ -2,7 +2,7 @@
 
 The Objective of this project is to display the Github repositories and allow the user to filter through the repositories by name using a search bar, using [the github api](https://docs.github.com/en/rest) to fetch repositories per user.This is the result:
 
-- http://
+- https://isagarabana.github.io/github-repositories---REACT/
 
 This project has been developed with:
 
