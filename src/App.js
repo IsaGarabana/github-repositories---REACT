@@ -44,7 +44,7 @@ function App() {
 					<UserData user={user} />
 				</section>
 				<div className="repoList">
-					<FilterByName handleFilterName={handleFilterName} />
+					<FilterByName handleFilterName={handleFilterName} filterName={filterName} />
 					<RepoList repos={filteredRepos} />
 				</div>
 			</main>

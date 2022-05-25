@@ -1,3 +1,20 @@
-.repoTitle {
-	font-size: 1.4rem;
+@import "../core/reset";
+
+.repoItem {
+	padding: 10px 0 10px 0;
+	border-top: 1px solid grey;
+	&--title {
+		margin: 5px 0 5px 0;
+		border-top: 1px solid gray;
+		font-size: 1.25rem;
+		color: #0969da;
+		padding-bottom: 10px;
+		:hover {
+			text-decoration: underline;
+		}
+	}
+	&--detail {
+		margin: 5px 0 5px 0;
+		font-size: 0.75rem;
+	}
 }

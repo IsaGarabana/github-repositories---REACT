@@ -1,4 +1,5 @@
 import RepoItem from "./RepoItem";
+import "../styles/components/repoList.scss";
 
 function RepoList(props) {
 	const repoElements = props.repos.map((repo) => {
@@ -11,7 +12,7 @@ function RepoList(props) {
 
 	return (
 		<section>
-			<ul>{repoElements}</ul>
+			<ul className="eachRepo">{repoElements}</ul>
 		</section>
 	);
 }
