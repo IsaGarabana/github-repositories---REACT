@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles/core/reset.scss";
+import "./styles/components/App.scss";
 import callReposApi from "./services/reposApi";
 import RepoList from "./components/RepoList";
 import FilterByName from "./components/FilterByName";
@@ -42,8 +43,10 @@ function App() {
 				<section>
 					<UserData user={user} />
 				</section>
-				<FilterByName handleFilterName={handleFilterName} filterName={filterName} />
-				<RepoList repos={filteredRepos} />
+				<div>
+					<FilterByName handleFilterName={handleFilterName} filterName={filterName} />
+					<RepoList repos={filteredRepos} />
+				</div>
 			</main>
 		</>
 	);

@@ -1,12 +1,14 @@
+import "../styles/components/repoItem.scss";
+
 const RepoItem = (props) => {
 	return (
-		<>
-			<a href={props.repo.repoLink}>
+		<div className="repoItem">
+			<a className="repoItem--title" href={props.repo.repoLink}>
 				<h4> {props.repo.repoName} </h4>
 			</a>
 
-			<p> {props.repo.repoDescr}</p>
-		</>
+			<p className="repoItem--detail"> {props.repo.repoDescr}</p>
+		</div>
 	);
 };
 export default RepoItem;
