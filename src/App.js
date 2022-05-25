@@ -37,18 +37,15 @@ function App() {
 	}, []);
 
 	return (
-		<>
-			<header> </header>
-			<main className="main">
-				<section>
-					<UserData user={user} />
-				</section>
-				<div>
-					<FilterByName handleFilterName={handleFilterName} filterName={filterName} />
-					<RepoList repos={filteredRepos} />
-				</div>
-			</main>
-		</>
+		<main className="main">
+			<section>
+				<UserData user={user} />
+			</section>
+			<div>
+				<FilterByName handleFilterName={handleFilterName} filterName={filterName} />
+				<RepoList repos={filteredRepos} />
+			</div>
+		</main>
 	);
 }
 
